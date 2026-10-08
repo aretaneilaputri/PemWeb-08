@@ -5,7 +5,7 @@ include __DIR__ . '/../includes/header.php';
 $flash = $_SESSION['flash'] ?? null;
 unset($_SESSION['flash']);
 ?>
-        <section>
+       <section>
             <h2>Tambah Buku</h2>
 
             <?php if ($flash): ?>
@@ -15,15 +15,15 @@ unset($_SESSION['flash']);
             <form id="form-tambah" method="post" action="proses_tambah.php">
                 <p>
                     <label for="judul">Judul</label><br>
-                    <input type="text" id="judul" name="judul" required>
+                    <input type="text" id="judul" name="judul">
                 </p>
                 <p>
                     <label for="pengarang">Pengarang</label><br>
-                    <input type="text" id="pengarang" name="pengarang" required>
+                    <input type="text" id="pengarang" name="pengarang">
                 </p>
                 <p>
                     <label for="tahun">Tahun Terbit</label><br>
-                    <input type="number" id="tahun" name="tahun" min="1900" max="2026" required>
+                    <input type="number" id="tahun" name="tahun" min="1900" max="2026">
                 </p>
                 <p>
                     <label for="isbn">ISBN</label><br>
@@ -31,7 +31,7 @@ unset($_SESSION['flash']);
                 </p>
                 <p>
                     <label for="stok">Stok</label><br>
-                    <input type="number" id="stok" name="stok" min="0" required>
+                    <input type="number" id="stok" name="stok" min="0">
                 </p>
                 <p>
                     <label for="kategori">Kategori</label><br>
